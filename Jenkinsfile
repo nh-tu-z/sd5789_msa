@@ -1,10 +1,10 @@
-#!/usr/bin/env groovy
-//========================================================================
-// Demo CI
-// Version: v1.x
-//========================================================================
-@Library('devops-jenkins-ci@main') _
-demoPipeline script: this
-//========================================================================
-// DO NOT MODIFY AFTER THESE LINES.
-//=========================================================================
+pipeline {
+    agent any
+    stages {
+        stage('Build Back End Image') {
+            steps {
+                echo 'Hello, this is build back end image step.'
+            }
+        }
+    }
+}
