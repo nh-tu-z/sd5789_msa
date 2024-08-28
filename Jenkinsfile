@@ -11,7 +11,7 @@ pipeline {
         stage('Build Back End Image') {
             steps {
                 sh '''
-                docker build -t practical-devops:latest -f src/backend/Dockerfile .
+                docker build -t backend:latest -f backend/Dockerfile .
                 '''
             }
         }
